@@ -23,10 +23,7 @@ $ ruby main.rb
 ```
 
 # Table of Contents
-* [API Intro](#API-Intro)
-* [Implementation](#Implementation)
-* [Program Time Complexity](#Program-Time-Complexity)
-* [Result of Sample Test Case](#Result-of-Sample-Test-Case)
+
 * [License](#license)
 * [Author](#author)
 
@@ -93,7 +90,7 @@ ___
 
 #### Result of Sample Test Case
 
-"Date.txt" file is updated by main.rb program execution.
+"Date.txt" file is updated by main.rb program execution. 
 
 ___
 
@@ -103,4 +100,4 @@ ___
 ___
 
 ## Author
- [Dargo Wangl](/LICENSE)
+ [Dargo Wang](/LICENSE)
