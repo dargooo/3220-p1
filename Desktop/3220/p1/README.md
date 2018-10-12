@@ -1,70 +1,90 @@
-# Foo Project 
+# Project 2 - Lee County Funfair
 
-This is foo project brief description. We can add some interesting stuff to make Foo functions work and test it across different cases.
+This is brief description for project 2. 
 
-* This is the best feature of Foo Project.
-* I am an optimized feature of Foo Project.
-* I am a future feature of Foo Project.
-* I am a silly bug of Foo Project. 
+* This project is written and run in DrRacket.
+* Two friends is playing the bucket ball game. Each bucket is assigned 10 balls, including red, green, blue, white colors.
+* Red is worth 10 points. Green is worth 15 points. Blue is worth 20 points. White is worth 1 point. 
+* The one who has higher total points of bucket wins the game.
+
 
 ### Quick start
-**Make sure you have Foo OS version >= 800.0 and (Foo Package Manager >= 500BC**
 
-> Clone/Download the solution then run `main_foo.rb`
+> Clone/Download the solution then run `funfair_scheme.rkt`
 
 ```
 
-# Download all files from canvas
+# Download Project2_Wang_Dargo.zip file from canvas
+# Unpack the zip file
 
-# For Mac OSX
-$ ruby main_foo.rb
 
 ```
 
 # Table of Contents
-* [Foo chapter](#foo-chapter)
-* [Installing](#installing)
-* [Running the app](#running-the-app)
+* [API Intro](#API-Intro)
+* [Implementation](#iImplementation)
+* [Program Time Complexity](#Program-Time-Complexity)
+* [Result of Sample Test Case](#Result-of-Sample-Test-Case)
 * [License](#license)
 * [Author](#author)
 
-#### Foo chapter
 
-Some interesting stuff here .......
-
-___
-
-#### Installing
-
-Some interesting stuff here .......
-
-___
 
 #### API Intro
 
-Some description 
+There are 5 functions is this project. 
+
+ball-val function returns the value of a ball
 
 ```
-Class SearchController
-.
-.
-end
+(define (ball-val ball)
+(cond
+[(equal? "R" ball) 10]
+[(equal? "G" ball) 15]
+[(equal? "B" ball) 20]
+[(equal? "W" ball) 1]))
 ```
 
-Some magical APIs are written by Author, like `updateList` API magically handles everything.
+count-balls function returns the number of a color in a bucket
 
 ```
-def updateList(movie_name)	
-.
-.
-end
+(define (count-balls color bucket)
+(count (keep (lambda(c)(equal? color c)) bucket)))
+```
+
+color-counts function returns a list of color numbers of a bucket
+
+```
+(define (color-counts bucket)
+(cons (count-balls 'R bucket) (cons (count-balls 'G bucket) (cons (count-balls 'B bucket) (cons (count-balls 'W bucket) '())))))
+```
+
+bucket-val function returns the value a bucket
+```
+(define (bucket-val bucket)
+(let ((val 0))
+(for-each (lambda(ball)
+(set! val (+ val (ball-val ball))))
+bucket)
+val))
+```
+
+judge function returns the winner of 2 buckets
+```
+(define (judge bucket1 bucket2)
+(let((val1 (bucket-val bucket1)))
+(let((val2 (bucket-val bucket2)))
+(cond
+((< val1 val2) (display "Bucket2, Won .. !"))
+((> val1 val2) (display"Bucket1, Won .. !"))
+((= val1 val2) (display"It's a Tie .. !"))
+))))
 ```
 ___
 
-#### Implementation of Foo
+#### Implementation 
 
-The Foo program is implemented with Observer and Delegation Design Pattern. At a lower level, the program also uses Queue to keep time complexity O(n). 
-
+The  program is implemented with for-each iteration of a list; condition branching.
 ___
 
 #### Program Time Complexity
@@ -75,7 +95,16 @@ ___
 
 #### Result of Sample Test Case
 
-some image or output is shown by Foo program execution......
+> (ball-val 'R)
+10
+> (count-balls 'R '(R B G R R R B W R W))
+5
+> (color-counts '(R B G R R R B W R W))
+'(5 1 2 2)
+> (bucket-val '(R B G R R R B W R W))
+107
+> (judge '(R G B R R R B W R W) '(W R R R R G B B G W))
+Bucket2, Won .. !
 
 ___
 
@@ -85,4 +114,4 @@ ___
 ___
 
 ## Author
- [Jay Patel](/LICENSE)
+ [Dargo Wang](/LICENSE)
