@@ -22,7 +22,7 @@ This is brief description for project 2.
 
 # Table of Contents
 * [API Intro](#API-Intro)
-* [Implementation](#Implementation)
+* [Implementation](#implementation)
 * [Program Time Complexity](#Program-Time-Complexity)
 * [Result of Sample Test Case](#Result-of-Sample-Test-Case)
 * [License](#license)
