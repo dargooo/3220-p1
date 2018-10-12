@@ -8,6 +8,7 @@ This is brief description for project 2.
 * The one who has higher total points of bucket wins the game.
 
 
+
 ### Quick start
 
 > Clone/Download the solution then run `funfair_scheme.rkt`
@@ -17,12 +18,11 @@ This is brief description for project 2.
 # Download Project2_Wang_Dargo.zip file from canvas
 # Unpack the zip file
 
-
 ```
 
 # Table of Contents
 * [API Intro](#API-Intro)
-* [Implementation](#iImplementation)
+* [Implementation](#Implementation)
 * [Program Time Complexity](#Program-Time-Complexity)
 * [Result of Sample Test Case](#Result-of-Sample-Test-Case)
 * [License](#license)
