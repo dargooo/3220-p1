@@ -82,7 +82,7 @@ judge function returns the winner of 2 buckets
 ```
 ___
 
-#### Implementation 
+#### Implementation (/Implementation)
 
 The  program is implemented with for-each iteration of a list; condition branching.
 ___
@@ -94,7 +94,7 @@ The program runs with O(n) time complexity.
 ___
 
 #### Result of Sample Test Case
-
+```
 > (ball-val 'R)
 10
 > (count-balls 'R '(R B G R R R B W R W))
@@ -105,7 +105,7 @@ ___
 107
 > (judge '(R G B R R R B W R W) '(W R R R R G B B G W))
 Bucket2, Won .. !
-
+```
 ___
 
 #### License
