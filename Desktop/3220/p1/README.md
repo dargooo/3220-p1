@@ -1,96 +1,81 @@
-# Project 1 
+# Foo Project 
 
-This is brief description for project 1. 
+This is foo project brief description. We can add some interesting stuff to make Foo functions work and test it across different cases.
 
-* Some very simple code for ruby beginners.
-* Some description about basic usage of ruby.
-* A program with 2 classes that updates a searching list of movies and then stores the list into a file.
-
+* This is the best feature of Foo Project.
+* I am an optimized feature of Foo Project.
+* I am a future feature of Foo Project.
+* I am a silly bug of Foo Project. 
 
 ### Quick start
+**Make sure you have Foo OS version >= 800.0 and (Foo Package Manager >= 500BC**
 
-> Clone/Download the solution then run `main.rb`
+> Clone/Download the solution then run `main_foo.rb`
 
 ```
 
-# Download Project1_Wang_Dargo.zip file from canvas
-# Unpack the zip file
+# Download all files from canvas
 
 # For Mac OSX
-$ unzip -a Project1_Wang_Dargo.zip
-$ ruby main.rb
+$ ruby main_foo.rb
 
 ```
 
 # Table of Contents
-
+* [Foo chapter](#foo-chapter)
+* [Installing](#installing)
+* [Running the app](#running-the-app)
 * [License](#license)
 * [Author](#author)
 
+#### Foo chapter
 
-
-#### API Intro
-
-SearchController class provides functions needed for updating the searching list.
-
-```
-class SearchController
-
-    attr_accessor :searchSuggestionList
-
-    def initialize(search_list = [])
-
-    def showList()
-
-    def updateList(movie_name)
-
-    def saveListToFile()
-
-end
-```
-
- `updateList`  function is the major one to handle the program. It inserts the new name in the front of the list.
-
-```
-def updateList(movie_name)
-    new_list = [movie_name]
-    @search_list.each do |movie|
-        if movie.upcase != movie_name.upcase
-            new_list.push(movie)
-        end
-    end
-    @search_list = new_list
-end
-```
-
-`saveListToFile`  function writes the updated list onto a "data.txt" file after the update of searching list is finished.
-
-```
-def saveListToFile()
-    newFile = File.new("data.txt", "w+")
-    if newFile
-        newFile.puts(@search_list)
-    end
-end
-```
+Some interesting stuff here .......
 
 ___
 
-#### Implementation 
+#### Installing
 
-The program is using each iterator on array, in order to compare each word in the existing list to the new word, and then push it in the end of the new list.
+Some interesting stuff here .......
+
+___
+
+#### API Intro
+
+Some description 
+
+```
+Class SearchController
+.
+.
+end
+```
+
+Some magical APIs are written by Author, like `updateList` API magically handles everything.
+
+```
+def updateList(movie_name)	
+.
+.
+end
+```
+___
+
+#### Implementation of Foo
+
+The Foo program is implemented with Observer and Delegation Design Pattern. At a lower level, the program also uses Queue to keep time complexity O(n). 
 
 ___
 
 #### Program Time Complexity
 
-The program runs with O(n2) time complexity.
+The program runs with O(n) time complexity.
 
 ___
 
 #### Result of Sample Test Case
 
-"Date.txt" file is updated by main.rb program execution. 
+some image or output is shown by Foo program execution......
 
 ___
 
@@ -100,4 +85,4 @@ ___
 ___
 
 ## Author
- [Dargo Wang](/LICENSE)
+ [Jay Patel](/LICENSE)
