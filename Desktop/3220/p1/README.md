@@ -82,7 +82,7 @@ judge function returns the winner of 2 buckets
 ```
 ___
 
-#### Implementation (/Implementation)
+#### Implementation 
 
 The  program is implemented with for-each iteration of a list; condition branching.
 ___
