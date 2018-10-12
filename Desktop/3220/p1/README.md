@@ -21,10 +21,10 @@ This is brief description for project 2.
 ```
 
 # Table of Contents
-* [API Intro](#API-Intro)
+* [API Intro](#api-intro)
 * [Implementation](#implementation)
-* [Program Time Complexity](#Program-Time-Complexity)
-* [Result of Sample Test Case](#Result-of-Sample-Test-Case)
+* [Program Time Complexity](#program-time-complexity)
+* [Result of Sample Test Case](#result-of-sample-test-case)
 * [License](#license)
 * [Author](#author)
 
@@ -80,16 +80,19 @@ judge function returns the winner of 2 buckets
 ((= val1 val2) (display"It's a Tie .. !"))
 ))))
 ```
+
 ___
 
 #### Implementation 
 
 The  program is implemented with for-each iteration of a list; condition branching.
+
 ___
 
 #### Program Time Complexity
 
 The program runs with O(n) time complexity.
+
 
 ___
 
@@ -106,6 +109,7 @@ ___
 > (judge '(R G B R R R B W R W) '(W R R R R G B B G W))
 Bucket2, Won .. !
 ```
+
 ___
 
 #### License
