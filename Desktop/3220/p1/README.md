@@ -35,12 +35,12 @@ This is brief description for project 3.
 
 ### API-Intro
 
-There are 3 main rules in this project. <br /><br />
+There are 3 main rules in this project. <br />
 
 ##### path_to_phone(Start, End, Path):<br />
 `finds all possibility path from Start to End, is there is a phone in End.`<br />
 `Helper rules: connected, travel`<br />
-Queries samples:
+<br />Queries samples:
 ```
 path_to_phone(1, 5, Path).
 ```
@@ -50,7 +50,7 @@ path_to_phone(1, Any_ending, Path).
 ```
 path_to_phone(Any_start, 16, Path).
 ```
-
+<br />
 
 ##### min_path_to_phone(Start, End, Path, Distance):<br />
 `find the shortest path from Start to End.`<br />
@@ -63,12 +63,12 @@ min_path_to_phone(1, End, Path, Distance)
 ```
 min_path_to_phone(1, 16, Path, Distance)
 ```
-
+<br />
 
 ##### max_path_to_phone(Start, End, Path, Distance):<br />
 `find the shortest path from Start to End.`<br />
 `Helper rules: path_to_phone, max`<br />
-Queries samples(At least provide Start):
+<br />Queries samples(At least provide Start):
 
 ```
 max_path_to_phone(1, End, Path, Distance)
@@ -76,7 +76,7 @@ max_path_to_phone(1, End, Path, Distance)
 ```
 max_path_to_phone(1, 16, Path, Distance)
 ```
-
+<br />
 
 
 ___
@@ -136,10 +136,10 @@ false.
 
 ___
 
-#### License
+### License
  [Auburn University](/LICENSE)
 
 ___
 
-## Author
+### Author
  [Dargo Wang](/LICENSE)
