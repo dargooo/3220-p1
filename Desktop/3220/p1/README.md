@@ -1,22 +1,24 @@
-# Project 2 - Lee County Funfair
+# Project 3 - Traversal with Prolog
 
-This is brief description for project 2. 
+This is brief description for project 3. 
 
-* This project is written and run in DrRacket.
-* Two friends is playing the bucket ball game. Each bucket is assigned 10 balls, including red, green, blue, white colors.
-* Red is worth 10 points. Green is worth 15 points. Blue is worth 20 points. White is worth 1 point. 
-* The one who has higher total points of bucket wins the game.
+* This project is written in Prolog language.
+* The program will tell us how to get from one room of a one-story building, to any other room in that building.
+* There will be phones ringing in one or more of the rooms. Our program ONLY tell us how to get to those rooms.
 
 
 
 ### Quick start
 
-> Clone/Download the solution then run `funfair_scheme.rkt`
+> Download and run traversal.pl
 
 ```
 
-# Download Project2_Wang_Dargo.zip file from canvas
+# Download Project3_Wang_Dargo.zip file from canvas
 # Unpack the zip file
+# Open SWI-Prolog.
+# Enters "['/Users/home/Downloads/traversal']". Should be pwd you just download.
+# Start some queries.
 
 ```
 
@@ -32,61 +34,58 @@ This is brief description for project 2.
 
 #### API-Intro
 
-There are 5 functions is this project. 
+There are 3 main rules in this project. 
 
-ball-val function returns the value of a ball
-
+path_to_phone(Start, End, Path) rule finds all possibility path from Start to End, is there is a phone in End.
+Helper rules: connected, travel
+Queries samples:
 ```
-(define (ball-val ball)
-(cond
-[(equal? "R" ball) 10]
-[(equal? "G" ball) 15]
-[(equal? "B" ball) 20]
-[(equal? "W" ball) 1]))
+path_to_phone(1, 5, Path).
 ```
-
-count-balls function returns the number of a color in a bucket
-
 ```
-(define (count-balls color bucket)
-(count (keep (lambda(c)(equal? color c)) bucket)))
+path_to_phone(1, Any_ending, Path).
+```
+```
+path_to_phone(Any_start, 16, Path).
 ```
 
-color-counts function returns a list of color numbers of a bucket
+min_path_to_phone(Start, End, Path, Distance) rule find the shortest path from Start to End.
+Helper rules: path_to_phone, min
+Queries samples(At least provide Start):
 
 ```
-(define (color-counts bucket)
-(cons (count-balls 'R bucket) (cons (count-balls 'G bucket) (cons (count-balls 'B bucket) (cons (count-balls 'W bucket) '())))))
+min_path_to_phone(1, End, Path, Distance)
+```
+```
+min_path_to_phone(1, 16, Path, Distance)
 ```
 
-bucket-val function returns the value a bucket
-```
-(define (bucket-val bucket)
-(let ((val 0))
-(for-each (lambda(ball)
-(set! val (+ val (ball-val ball))))
-bucket)
-val))
-```
+max_path_to_phone(Start, End, Path, Distance) rule find the shortest path from Start to End.
+Helper rules: path_to_phone, max
+Queries samples(At least provide Start):
 
-judge function returns the winner of 2 buckets
 ```
-(define (judge bucket1 bucket2)
-(let((val1 (bucket-val bucket1)))
-(let((val2 (bucket-val bucket2)))
-(cond
-((< val1 val2) (display "Bucket2, Won .. !"))
-((> val1 val2) (display"Bucket1, Won .. !"))
-((= val1 val2) (display"It's a Tie .. !"))
-))))
+max_path_to_phone(1, End, Path, Distance)
+```
+```
+max_path_to_phone(1, 16, Path, Distance)
 ```
 
 ___
 
 #### Implementation 
 
-The  program is implemented with for-each iteration of a list; condition branching.
-
+Facts: door(X,Y) - indicate if there is a door between 2 rooms.
+       phone(X)  - indicate if there is a phone in that room.
+Rules: connected(X,Y) - indicate if 2 rooms are connected.
+       path_to_phone(X,Y,Z) - see API Intro.
+       travel(X,Y,Z,W) - help find path_to_phone.
+       min_path_to_phone(X,Y,Z,W) - see API Intro.
+       min(X,Y) - help find min_path_to_phone. Include recursive and basic cases.
+       max_path_to_phone(X,Y,Z,W) - see API Intro.
+       max(X,Y) - help find max_path_to_phone. Include recursive and basic cases.
+  
+  
 ___
 
 #### Program Time Complexity
@@ -98,16 +97,33 @@ ___
 
 #### Result of Sample Test Case
 ```
-> (ball-val 'R)
-10
-> (count-balls 'R '(R B G R R R B W R W))
-5
-> (color-counts '(R B G R R R B W R W))
-'(5 1 2 2)
-> (bucket-val '(R B G R R R B W R W))
-107
-> (judge '(R G B R R R B W R W) '(W R R R R G B B G W))
-Bucket2, Won .. !
+?- path_to_phone(1, 5, Path).
+Path = [1, 2, 8, 4, 9, 6, 5] 
+Path = [1, 2, 8, 4, 9, 5] 
+Path = [1, 2, 8, 7, 9, 6, 5] 
+Path = [1, 2, 8, 7, 9, 5] 
+Path = [1, 7, 8, 4, 9, 6, 5] 
+Path = [1, 7, 8, 4, 9, 5] 
+Path = [1, 7, 9, 6, 5] 
+Path = [1, 7, 9, 5] 
+false.
+```
+```
+?- min_path_to_phone(1, End, Path, Distance).
+End = 5,
+Path = [1, 7, 9, 5],
+Distance = 3 
+End = 9,
+Path = [1, 7, 9],
+Distance = 2 
+End = 16,
+Path = [1, 7, 14, 15, 16],
+Distance = 4 
+false.
+```
+```
+?- path_to_phone(1, 7, Path).
+false.
 ```
 
 ___
