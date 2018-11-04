@@ -38,8 +38,8 @@ This is brief description for project 3.
 There are 3 main rules in this project. <br /><br />
 
 path_to_phone(Start, End, Path):<br />
-`finds all possibility path from Start to End, is there is a phone in End.'
-'Helper rules: connected, travel'
+`finds all possibility path from Start to End, is there is a phone in End.`
+`Helper rules: connected, travel`
 Queries samples:
 ```
 path_to_phone(1, 5, Path).
