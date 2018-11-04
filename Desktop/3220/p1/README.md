@@ -33,11 +33,11 @@ This is brief description for project 3.
 
 
 
-#### API-Intro
+### API-Intro
 
 There are 3 main rules in this project. <br /><br />
 
-## path_to_phone(Start, End, Path):<br />
+##### path_to_phone(Start, End, Path):<br />
 `finds all possibility path from Start to End, is there is a phone in End.`<br />
 `Helper rules: connected, travel`<br />
 Queries samples:
@@ -51,7 +51,8 @@ path_to_phone(1, Any_ending, Path).
 path_to_phone(Any_start, 16, Path).
 ```
 
-<br />min_path_to_phone(Start, End, Path, Distance):<br />
+
+##### min_path_to_phone(Start, End, Path, Distance):<br />
 `find the shortest path from Start to End.`<br />
 `Helper rules: path_to_phone, min`<br />
 Queries samples(At least provide Start):
@@ -63,7 +64,8 @@ min_path_to_phone(1, End, Path, Distance)
 min_path_to_phone(1, 16, Path, Distance)
 ```
 
-<br />max_path_to_phone(Start, End, Path, Distance):<br />
+
+##### max_path_to_phone(Start, End, Path, Distance):<br />
 `find the shortest path from Start to End.`<br />
 `Helper rules: path_to_phone, max`<br />
 Queries samples(At least provide Start):
@@ -79,7 +81,7 @@ max_path_to_phone(1, 16, Path, Distance)
 
 ___
 
-#### Implementation 
+### Implementation 
 
 Facts: <br /><br />door(X,Y) - indicate if there is a door between 2 rooms.<br /><br />
        phone(X)  - indicate if there is a phone in that room.<br /><br /><br />
@@ -94,14 +96,14 @@ Rules: <br /><br />connected(X,Y) - indicate if 2 rooms are connected.<br /><br 
   
 ___
 
-#### Program Time Complexity
+### Program Time Complexity
 
 The program runs with O(n) time complexity.
 
 
 ___
 
-#### Result of Sample Test Case
+### Result of Sample Test Case
 ```
 ?- path_to_phone(1, 5, Path).
 Path = [1, 2, 8, 4, 9, 6, 5] 
