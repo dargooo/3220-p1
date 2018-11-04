@@ -55,7 +55,7 @@ path_to_phone(Any_start, 16, Path).
 ##### min_path_to_phone(Start, End, Path, Distance):<br />
 `find the shortest path from Start to End.`<br />
 `Helper rules: path_to_phone, min`<br />
-Queries samples(At least provide Start):
+<br />Queries samples(At least provide Start):
 
 ```
 min_path_to_phone(1, End, Path, Distance)
@@ -83,9 +83,11 @@ ___
 
 ### Implementation 
 
-Facts: <br /><br />door(X,Y) - indicate if there is a door between 2 rooms.<br /><br />
+##### Facts: 
+<br /><br />door(X,Y) - indicate if there is a door between 2 rooms.<br /><br />
        phone(X)  - indicate if there is a phone in that room.<br /><br /><br />
-Rules: <br /><br />connected(X,Y) - indicate if 2 rooms are connected.<br /><br />
+##### Rules: 
+<br /><br />connected(X,Y) - indicate if 2 rooms are connected.<br /><br />
        path_to_phone(X,Y,Z) - see API Intro.<br /><br />
        travel(X,Y,Z,W) - help find path_to_phone.<br /><br />
        min_path_to_phone(X,Y,Z,W) - see API Intro.<br /><br />
