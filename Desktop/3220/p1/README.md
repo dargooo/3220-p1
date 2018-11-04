@@ -38,8 +38,8 @@ This is brief description for project 3.
 There are 3 main rules in this project. <br /><br />
 
 path_to_phone(Start, End, Path):<br />
--      finds all possibility path from Start to End, is there is a phone in End.<br />
--      Helper rules: connected, travel<br />
+`finds all possibility path from Start to End, is there is a phone in End.<br />
+Helper rules: connected, travel<br />`
 Queries samples:
 ```
 path_to_phone(1, 5, Path).
@@ -80,15 +80,15 @@ ___
 
 #### Implementation 
 
-Facts: door(X,Y) - indicate if there is a door between 2 rooms.<br />
-       phone(X)  - indicate if there is a phone in that room.<br />
-Rules: connected(X,Y) - indicate if 2 rooms are connected.<br /><br />
-       path_to_phone(X,Y,Z) - see API Intro.<br />
-       travel(X,Y,Z,W) - help find path_to_phone.<br />
-       min_path_to_phone(X,Y,Z,W) - see API Intro.<br />
-       min(X,Y) - help find min_path_to_phone. Include recursive and basic cases.<br />
-       max_path_to_phone(X,Y,Z,W) - see API Intro.<br />
-       max(X,Y) - help find max_path_to_phone. Include recursive and basic cases.<br />
+Facts: <br /><br />door(X,Y) - indicate if there is a door between 2 rooms.<br /><br />
+       phone(X)  - indicate if there is a phone in that room.<br /><br />
+Rules: <br /><br />connected(X,Y) - indicate if 2 rooms are connected.<br /><br /><br />
+       path_to_phone(X,Y,Z) - see API Intro.<br /><br />
+       travel(X,Y,Z,W) - help find path_to_phone.<br /><br />
+       min_path_to_phone(X,Y,Z,W) - see API Intro.<br /><br />
+       min(X,Y) - help find min_path_to_phone. Include recursive and basic cases.<br /><br />
+       max_path_to_phone(X,Y,Z,W) - see API Intro.<br /><br />
+       max(X,Y) - help find max_path_to_phone. Include recursive and basic cases.<br /><br />
   
   
 ___
