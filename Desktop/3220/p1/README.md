@@ -37,7 +37,7 @@ This is brief description for project 3.
 
 There are 3 main rules in this project. <br />
 
-##### path_to_phone(Start, End, Path):<br />
+#### path_to_phone(Start, End, Path):<br />
 `finds all possibility path from Start to End, is there is a phone in End.`<br />
 `Helper rules: connected, travel`<br />
 <br />Queries samples:
@@ -52,7 +52,7 @@ path_to_phone(Any_start, 16, Path).
 ```
 <br />
 
-##### min_path_to_phone(Start, End, Path, Distance):<br />
+#### min_path_to_phone(Start, End, Path, Distance):<br />
 `find the shortest path from Start to End.`<br />
 `Helper rules: path_to_phone, min`<br />
 <br />Queries samples(At least provide Start):
@@ -65,7 +65,7 @@ min_path_to_phone(1, 16, Path, Distance)
 ```
 <br />
 
-##### max_path_to_phone(Start, End, Path, Distance):<br />
+#### max_path_to_phone(Start, End, Path, Distance):<br />
 `find the shortest path from Start to End.`<br />
 `Helper rules: path_to_phone, max`<br />
 <br />Queries samples(At least provide Start):
@@ -84,10 +84,10 @@ ___
 ### Implementation 
 
 ##### Facts: 
-<br /><br />door(X,Y) - indicate if there is a door between 2 rooms.<br /><br />
+<br />door(X,Y) - indicate if there is a door between 2 rooms.<br /><br />
        phone(X)  - indicate if there is a phone in that room.<br /><br /><br />
 ##### Rules: 
-<br /><br />connected(X,Y) - indicate if 2 rooms are connected.<br /><br />
+<br />connected(X,Y) - indicate if 2 rooms are connected.<br /><br />
        path_to_phone(X,Y,Z) - see API Intro.<br /><br />
        travel(X,Y,Z,W) - help find path_to_phone.<br /><br />
        min_path_to_phone(X,Y,Z,W) - see API Intro.<br /><br />
