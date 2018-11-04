@@ -32,13 +32,14 @@ This is brief description for project 3.
 
 
 
+
 #### API-Intro
 
 There are 3 main rules in this project. <br /><br />
 
 path_to_phone(Start, End, Path):<br />
-finds all possibility path from Start to End, is there is a phone in End.<br />
-Helper rules: connected, travel<br />
+-      finds all possibility path from Start to End, is there is a phone in End.<br />
+-      Helper rules: connected, travel<br />
 Queries samples:
 ```
 path_to_phone(1, 5, Path).
@@ -51,8 +52,8 @@ path_to_phone(Any_start, 16, Path).
 ```
 
 min_path_to_phone(Start, End, Path, Distance):<br />
-ind the shortest path from Start to End.<br />
-Helper rules: path_to_phone, min<br />
+-      find the shortest path from Start to End.<br />
+-      Helper rules: path_to_phone, min<br />
 Queries samples(At least provide Start):
 
 ```
@@ -63,8 +64,8 @@ min_path_to_phone(1, 16, Path, Distance)
 ```
 
 max_path_to_phone(Start, End, Path, Distance):<br />
-find the shortest path from Start to End.<br />
-Helper rules: path_to_phone, max<br />
+-      find the shortest path from Start to End.<br />
+-      Helper rules: path_to_phone, max<br />
 Queries samples(At least provide Start):
 
 ```
@@ -73,6 +74,7 @@ max_path_to_phone(1, End, Path, Distance)
 ```
 max_path_to_phone(1, 16, Path, Distance)
 ```
+
 
 ___
 
