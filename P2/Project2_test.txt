@@ -1,0 +1,322 @@
+ 
+  ----jGRASP exec: /Users/wangxing/Desktop/2710/Project2/project2
+       =======================================================
+       |     Welcome to the Auburn Branch of Tiger Bank!     |
+       =======================================================
+ 1) Login
+ 2) Quit
+       Please choose an option: 1
+       =======================================================
+       |     Login to Access the Teller Terminal System      |
+       =======================================================
+ User name: admin
+ password: 0000
+       =======================================================
+       |    Teller Terminal System - System Administration   |
+       =======================================================
+ 1) Client and Account Management
+ 2) Add a branch staff member
+ 3) Delete a branch staff
+ 4) Display branch staff
+ 5) Change password
+ 6) Exit
+       Please choose an option: 2
+ User name: aaa0000
+ Password: 1111
+ Role (1 - Administrator; 2 - Staff): 1
+ 1) Confirm
+ 2) Cancel
+ please choose an option: 1
+ A new branch staff member is added!
+ User name: aaa0000    Role: System Adminictrator
+ Press any key to continue... 
+       =======================================================
+       |    Teller Terminal System - System Administration   |
+       =======================================================
+ 1) Client and Account Management
+ 2) Add a branch staff member
+ 3) Delete a branch staff
+ 4) Display branch staff
+ 5) Change password
+ 6) Exit
+       Please choose an option: 2
+ User name: bbb0000
+ Password: 2222
+ Role (1 - Administrator; 2 - Staff): 2
+ 1) Confirm
+ 2) Cancel
+ please choose an option: 1
+ A new branch staff member is added!
+ User name: bbb0000    Role: Branch Staff
+ Press any key to continue... 
+       =======================================================
+       |    Teller Terminal System - System Administration   |
+       =======================================================
+ 1) Client and Account Management
+ 2) Add a branch staff member
+ 3) Delete a branch staff
+ 4) Display branch staff
+ 5) Change password
+ 6) Exit
+       Please choose an option: 2
+ User name: ccc0000
+ Password: 3333
+ Role (1 - Administrator; 2 - Staff): 2
+ 1) Confirm
+ 2) Cancel
+ please choose an option: 1
+ A new branch staff member is added!
+ User name: ccc0000    Role: Branch Staff
+ Press any key to continue... 
+       =======================================================
+       |    Teller Terminal System - System Administration   |
+       =======================================================
+ 1) Client and Account Management
+ 2) Add a branch staff member
+ 3) Delete a branch staff
+ 4) Display branch staff
+ 5) Change password
+ 6) Exit
+       Please choose an option: 4
+ There are 4 users in the system.
+ 1. User Name: admin     Role: System Administrator
+ 2. User Name: aaa0000     Role: System Administrator
+ 3. User Name: bbb0000     Role: Branch Staff
+ 4. User Name: ccc0000     Role: Branch Staff
+ Press any key to continue... 
+       =======================================================
+       |    Teller Terminal System - System Administration   |
+       =======================================================
+ 1) Client and Account Management
+ 2) Add a branch staff member
+ 3) Delete a branch staff
+ 4) Display branch staff
+ 5) Change password
+ 6) Exit
+       Please choose an option: 2
+ User name: ddd0000
+ Password: 4444
+ Role (1 - Administrator; 2 - Staff): 2
+ 1) Confirm
+ 2) Cancel
+ please choose an option: 2
+       =======================================================
+       |    Teller Terminal System - System Administration   |
+       =======================================================
+ 1) Client and Account Management
+ 2) Add a branch staff member
+ 3) Delete a branch staff
+ 4) Display branch staff
+ 5) Change password
+ 6) Exit
+       Please choose an option: 3
+ Delete a user - User name: bbb0000
+ 1) Confirm
+ 2) Cancel
+ Please choose an option: 1
+ User bbb0000 was deleted!
+ Press any key to continue... 
+       =======================================================
+       |    Teller Terminal System - System Administration   |
+       =======================================================
+ 1) Client and Account Management
+ 2) Add a branch staff member
+ 3) Delete a branch staff
+ 4) Display branch staff
+ 5) Change password
+ 6) Exit
+       Please choose an option: 4
+ There are 3 users in the system.
+ 1. User Name: admin     Role: System Administrator
+ 2. User Name: aaa0000     Role: System Administrator
+ 3. User Name: ccc0000     Role: Branch Staff
+ Press any key to continue... 
+       =======================================================
+       |    Teller Terminal System - System Administration   |
+       =======================================================
+ 1) Client and Account Management
+ 2) Add a branch staff member
+ 3) Delete a branch staff
+ 4) Display branch staff
+ 5) Change password
+ 6) Exit
+       Please choose an option: 6
+       =======================================================
+       |     Welcome to the Auburn Branch of Tiger Bank!     |
+       =======================================================
+ 1) Login
+ 2) Quit
+       Please choose an option: 1
+       =======================================================
+       |     Login to Access the Teller Terminal System      |
+       =======================================================
+ User name: ccc0000
+ password: 3333
+       =======================================================
+       |        Teller Terminal System - Branch Staff        |
+       =======================================================
+ 1) Client and Account Management
+ 2) Change password
+ 3) Exit
+       Please choose an option: 2
+ New Password: 3333
+ Error - Your new password must be different from the old one!
+ New Password: 4444
+ Password was changed!
+ Press any key to continue... 
+       =======================================================
+       |        Teller Terminal System - Branch Staff        |
+       =======================================================
+ 1) Client and Account Management
+ 2) Change password
+ 3) Exit
+       Please choose an option: 3
+       =======================================================
+       |     Welcome to the Auburn Branch of Tiger Bank!     |
+       =======================================================
+ 1) Login
+ 2) Quit
+       Please choose an option: 1
+       =======================================================
+       |     Login to Access the Teller Terminal System      |
+       =======================================================
+ User name: ccc0000
+ password: 4444
+       =======================================================
+       |        Teller Terminal System - Branch Staff        |
+       =======================================================
+ 1) Client and Account Management
+ 2) Change password
+ 3) Exit
+       Please choose an option: 1
+       =======================================================
+       | Teller Terminal System - Client & Account Management|
+       =======================================================
+ 1) Add a client
+ 2) Add an account
+ 3) Edit client information
+ 4) Manage an account
+ 5) Save client and account information
+ 6) Exit
+       Please choose an option: 1
+ A new client will be added: 
+ Client name: Lucy
+ Address: somewhere
+ Social Security Number: 555-555-5555
+ Employer: washington
+ Annual income: 99999
+ A new client was added!
+ Press any key to continue... 
+       =======================================================
+       | Teller Terminal System - Client & Account Management|
+       =======================================================
+ 1) Add a client
+ 2) Add an account
+ 3) Edit client information
+ 4) Manage an account
+ 5) Save client and account information
+ 6) Exit
+       Please choose an option: 2
+ Choose a client: Locy
+ Error - The client is not in the system!
+ Choose a client: Lucy
+ A new account will be created for Lucy ...
+ Account Number: 
+ 5
+ Acount Type: checking
+ Balance: 100
+ A new account was created for Lucy!
+ Press any key to continue... 
+       =======================================================
+       | Teller Terminal System - Client & Account Management|
+       =======================================================
+ 1) Add a client
+ 2) Add an account
+ 3) Edit client information
+ 4) Manage an account
+ 5) Save client and account information
+ 6) Exit
+       Please choose an option: 3
+ Choose a client: Bob
+ Display Bob's information
+      Address: address1
+      Social security number: 111-111-1111
+      Employer: auburn
+      Annual income: 100000
+ Client Bob's information will be updated ...
+ 1) Confirm 
+ 2) Cancel
+ Please choose an option: 1
+ Address: theTree
+ Social Security Number: 666-666-6666
+ Employer: susam
+ Annual income: 33333
+ Bob's information was updated!
+ Press any key to continue... 
+       =======================================================
+       | Teller Terminal System - Client & Account Management|
+       =======================================================
+ 1) Add a client
+ 2) Add an account
+ 3) Edit client information
+ 4) Manage an account
+ 5) Save client and account information
+ 6) Exit
+       Please choose an option: 4
+ Which account will be managed? 3
+ Manage account 3 for Helen ...
+ 1) Deposit
+ 2) Withdraw
+ 3) Cancel
+ Please choose an option: 1
+ Deposit Amount: 100000
+ Balance of account 3 is: 133333
+ 1) Deposit
+ 2) Withdraw
+ 3) Cancel
+ Please choose an option: 2
+ Withdraw Amount: 4000
+ Balance of account 3 is: 129333
+ 1) Deposit
+ 2) Withdraw
+ 3) Cancel
+ Please choose an option: 3
+       =======================================================
+       | Teller Terminal System - Client & Account Management|
+       =======================================================
+ 1) Add a client
+ 2) Add an account
+ 3) Edit client information
+ 4) Manage an account
+ 5) Save client and account information
+ 6) Exit
+       Please choose an option: 5
+ Client information has been saved in the client-info file;
+ account information has been saved in the account-info file!
+ Press any key to continue... 
+       =======================================================
+       | Teller Terminal System - Client & Account Management|
+       =======================================================
+ 1) Add a client
+ 2) Add an account
+ 3) Edit client information
+ 4) Manage an account
+ 5) Save client and account information
+ 6) Exit
+       Please choose an option: 6
+       =======================================================
+       |        Teller Terminal System - Branch Staff        |
+       =======================================================
+ 1) Client and Account Management
+ 2) Change password
+ 3) Exit
+       Please choose an option: 3
+       =======================================================
+       |     Welcome to the Auburn Branch of Tiger Bank!     |
+       =======================================================
+ 1) Login
+ 2) Quit
+       Please choose an option: 2
+ 
+  ----jGRASP: operation complete.
+ 
